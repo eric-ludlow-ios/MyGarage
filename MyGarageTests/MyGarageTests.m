@@ -1,19 +1,19 @@
 //
-//  InTheGarageTests.m
-//  InTheGarageTests
+//  MyGarageTests.m
+//  MyGarageTests
 //
-//  Created by TRM on 7/15/15.
-//  Copyright (c) 2015 MottApplications. All rights reserved.
+//  Created by Taylor Mott on 16 Jul 15.
+//  Copyright (c) 2015 Mott Applications. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface InTheGarageTests : XCTestCase
+@interface MyGarageTests : XCTestCase
 
 @end
 
-@implementation InTheGarageTests
+@implementation MyGarageTests
 
 - (void)setUp {
     [super setUp];

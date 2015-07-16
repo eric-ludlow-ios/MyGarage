@@ -1,9 +1,9 @@
 //
 //  main.m
-//  InTheGarage
+//  MyGarage
 //
-//  Created by TRM on 7/15/15.
-//  Copyright (c) 2015 MottApplications. All rights reserved.
+//  Created by Taylor Mott on 16 Jul 15.
+//  Copyright (c) 2015 Mott Applications. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
