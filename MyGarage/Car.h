@@ -15,12 +15,15 @@
 @property (strong, nonatomic) NSString *model;
 @property (strong, nonatomic) NSString *make;
 @property (strong, nonatomic) NSString *year;
-@property (strong, nonatomic) UIColor *color;
+//@property (strong, nonatomic) UIColor *color;
 @property (strong, nonatomic) NSNumber *topSpeed;
 @property (strong, nonatomic) NSString *condition;
 @property (strong, nonatomic) NSNumber *numberOfDoors;
 @property (assign, nonatomic) BOOL isConvertable;
-@property (strong, nonatomic) Tire *tires;
+//@property (strong, nonatomic) Tire *tires;
+
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (NSDictionary *)carDictionary;
 
 - (void)go;
 - (void)stop;
