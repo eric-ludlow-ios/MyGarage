@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onf-E2-GZ1">
-                                <rect key="frame" x="285" y="100" width="30" height="30"/>
+                                <rect key="frame" x="285" y="187" width="30" height="30"/>
                                 <state key="normal" title="Go">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -98,7 +98,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikh-OP-VhQ">
-                                <rect key="frame" x="285" y="470" width="37" height="30"/>
+                                <rect key="frame" x="282" y="381" width="37" height="30"/>
                                 <state key="normal" title="Honk">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -106,17 +106,33 @@
                                     <action selector="honkButtonTapped" destination="ZDm-LG-Brq" eventType="touchUpInside" id="BhH-Al-EsB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="'                         '" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbl-oE-AfA">
+                                <rect key="frame" x="239.5" y="86" width="131" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="JMI-bd-LeZ"/>
+                                    <constraint firstAttribute="width" constant="131" id="afn-cQ-V5A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HT1-b0-x3Q" firstAttribute="top" secondItem="ikh-OP-VhQ" secondAttribute="bottom" constant="100" id="1FT-Dr-4FQ"/>
-                            <constraint firstItem="onf-E2-GZ1" firstAttribute="top" secondItem="60o-CV-Xx0" secondAttribute="bottom" constant="36" id="Hf2-4p-GaL"/>
+                            <constraint firstAttribute="centerY" secondItem="onf-E2-GZ1" secondAttribute="centerY" constant="98" id="Bev-cR-iJh"/>
+                            <constraint firstAttribute="centerY" secondItem="ikh-OP-VhQ" secondAttribute="centerY" constant="-96" id="Dee-PO-WpY"/>
                             <constraint firstAttribute="centerX" secondItem="0tr-c4-qEH" secondAttribute="centerX" constant="-1.5" id="KbL-4s-Z6y"/>
+                            <constraint firstAttribute="centerX" secondItem="Xbl-oE-AfA" secondAttribute="centerX" constant="-5" id="Mmf-oV-y2U"/>
                             <constraint firstAttribute="centerY" secondItem="0tr-c4-qEH" secondAttribute="centerY" id="bY4-KP-IVi"/>
                             <constraint firstAttribute="centerX" secondItem="onf-E2-GZ1" secondAttribute="centerX" id="gX9-aT-NP0"/>
-                            <constraint firstAttribute="centerX" secondItem="ikh-OP-VhQ" secondAttribute="centerX" constant="-3.5" id="lDL-hz-9hR"/>
+                            <constraint firstAttribute="centerX" secondItem="ikh-OP-VhQ" secondAttribute="centerX" constant="-0.5" id="mly-bR-IWt"/>
+                            <constraint firstAttribute="centerX" secondItem="onf-E2-GZ1" secondAttribute="centerX" id="p3f-Uj-U3m"/>
+                            <constraint firstItem="Xbl-oE-AfA" firstAttribute="top" secondItem="60o-CV-Xx0" secondAttribute="bottom" constant="22" id="zZ4-mW-AxM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="carMethodStringLabel" destination="Xbl-oE-AfA" id="2ar-Ni-iYo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s3g-uE-4Bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

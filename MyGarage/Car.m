@@ -72,16 +72,16 @@ static const NSString *isConvertableKey = @"isConvertable";
 }
 
 
-- (void)go {
-    NSLog(@"The %@ goes \"Vroom! Vroom!\"", self);
+- (NSString *)go {
+    return @"'Vroom! Vroom!'";
 }
 
-- (void)stop {
-    NSLog(@"The %@ goes \"Errrrrr!\"", self);
+- (NSString *)stop {
+    return @"'Errrrrrrrrt!'";
 }
 
-- (void)honk {
-    NSLog(@"The %@ goes \"Beep! Beep!\"", self);
+- (NSString *)honk {
+    return @"'Meep! Meep!'";
 }
 
 - (NSString *)description {

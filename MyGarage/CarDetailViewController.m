@@ -10,6 +10,8 @@
 
 @interface CarDetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *carMethodStringLabel;
+
 @end
 
 @implementation CarDetailViewController
@@ -26,15 +28,15 @@
 }
 
 - (IBAction)goButtonTapped {
-    [self.car go];
+    self.carMethodStringLabel.text = [self.car go];
 }
 
 - (IBAction)stopButtonTapped {
-    [self.car stop];
+    self.carMethodStringLabel.text = [self.car stop];
 }
 
 - (IBAction)honkButtonTapped {
-    [self.car honk];
+    self.carMethodStringLabel.text = [self.car honk];
     
 }
 

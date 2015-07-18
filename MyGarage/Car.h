@@ -25,8 +25,8 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)carDictionary;
 
-- (void)go;
-- (void)stop;
-- (void)honk;
+- (NSString *)go;
+- (NSString *)stop;
+- (NSString *)honk;
 
 @end
